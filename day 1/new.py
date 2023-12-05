@@ -30,7 +30,7 @@ word_to_digit = {
     "0": 0
 }
 
-pattern = r"\b(?:(one)|(two)|(three)|(four)|(five)|(six)|(seven)|(eight)|(nine)|\d)\b"
+pattern = r"(one|two|three|four|five|six|seven|eight|nine|\d)"
 def process_phrase(phrase):
 
     # Split the phrase into lines using '\n'
@@ -58,7 +58,7 @@ def process_Line(line):
 
 if __name__ == "__main__":
 
-    with open("lect.txt", "r") as file:
+    with open("/Users/RahanBen/Downloads/-Etudes/-Solo/AOC/day 1/lect.txt", "r") as file:
         input_string = file.read()
 
     process_phrase(input_string)
